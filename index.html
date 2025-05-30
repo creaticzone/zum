@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZumaBet Reklam Materyalleri</title>
+  <style>
+    :root {
+  --bg-color: #eaf6ea;
+  --text-color: #1b5e20;
+  --card-bg: #ffffff;
+  --btn-bg: #6ec171;
+  --btn-hover: #5aae61;
+}
+
+  body.dark {
+  --bg-color: #171921;
+  --text-color: #ffffff;
+  --card-bg: #292d3d;
+  --btn-bg: #6ec171;
+  --btn-hover: #5aae61;
+}
+
+   body {
+  font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    /* Toggle Button */
+   .toggle-theme {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* ← burada kenardan 20px içeri giriyoruz */
+  transform: translateY(-50%);
+  z-index: 1000;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+  .toggle-theme button {
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-theme button:hover {
+  background: var(--btn-hover);
+  transform: scale(1.1);
+}
+
+    .toggle-theme button:hover {
+      background: var(--btn-hover);
+      transform: scale(1.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--text-color);
+      font-size: 2.4em;
+      margin-bottom: 40px;
+    }
+
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 260px;
+      transition: all 0.3s ease;
+    }
+
+    .card.logo {
+      min-height: 140px;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .card.logo img {
+      max-height: 50px;
+    }
+
+    .size-label {
+      font-weight: bold;
+      font-size: 15px;
+      color: #43a047;
+      margin-bottom: 6px;
+    }
+
+    .download {
+      text-decoration: none;
+      background-color: var(--btn-bg);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download:hover {
+      background-color: var(--btn-hover);
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 6px;
+      margin: 60px 0 30px;
+    }
+
+    #download-all {
+  background-color: #ec0f0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#download-all:hover {
+  background-color: #c50d0d;
+}
+    .download-all a:hover {
+      background-color: #1b5e20;
+    }
+
+   footer {
+  margin-top: 80px;
+  padding: 30px 20px;
+  background: #6ec171;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+    footer a {
+      color: #6ec171;
+      text-decoration: underline;
+      margin: 0 8px;
+    }
+
+    footer img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tema Değiştir -->
+  <div class="toggle-theme">
+   <button id="theme-toggle">🌙</button>
+  </div>
+
+     <div class="header-right">
+    <a href="http://tinyurl.com/zumabet" target="_blank" class="header-btn">Güncel Giriş</a>
+    <a href="mailto:destek@zumabet.com" class="header-btn">İletişim</a>
+  </div>
+    
+ <div class="container">
+  <h1>ZumaBet Reklam Materyalleri</h1>
+
+  <!-- Logo Alanı -->
+  <div class="section-title">Logo Dosyaları</div>
+  <div class="grid-wrapper">
+    <div class="card logo">
+      <div class="size-label">PNG Logo</div>
+      <img src="logos/zumabet-logo.png" alt="PNG Logo" />
+      <a class="download" href="logos/zumabet-logo.png" download>İndir</a>
+    </div>
+    <div class="card logo">
+      <div class="size-label">SVG Logo</div>
+      <img src="logos/zumabet-logo.svg" alt="SVG Logo" />
+      <a class="download" href="logos/zumabet-logo.svg" download>İndir</a>
+    </div>
+  </div>
+
+  <!-- Bannerlar -->
+<div class="section-title">Bannerlar</div>
+<div class="grid-wrapper">
+  <div class="card"><div class="size-label">160x600</div><img src="banners/160x600.gif"><a class="download" href="banners/160x600.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">250x200</div><img src="banners/250x200.gif"><a class="download" href="banners/250x200.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">250x250</div><img src="banners/250x250.gif"><a class="download" href="banners/250x250.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">300x100</div><img src="banners/300x100.gif"><a class="download" href="banners/300x100.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">300x250</div><img src="banners/300x250.gif"><a class="download" href="banners/300x250.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">468x60</div><img src="banners/468x60.gif"><a class="download" href="banners/468x60.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">600x350</div><img src="banners/600x350.gif"><a class="download" href="banners/600x350.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">728x90</div><img src="banners/728x90.gif"><a class="download" href="banners/728x90.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">920x90</div><img src="banners/920x90.gif"><a class="download" href="banners/920x90.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">1000x50</div><img src="banners/1000x50.gif"><a class="download" href="banners/1000x50.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">1000x100</div><img src="banners/1000x100.gif"><a class="download" href="banners/1000x100.gif" download>İndir</a></div>
+  <div class="card"><div class="size-label">1200x90</div><img src="banners/1200x90.gif"><a class="download" href="banners/1200x90.gif" download>İndir</a></div>
+</div>
+    
+
+
+<div class="download-buttons">
+  <a href="zumabet-materials.zip" class="download-btn" id="download-all">Tümünü İndir</a>
+  <a href="#" class="download-btn" id="download-selected">Seçilenleri İndir</a>
+</div>
+    
+  <!-- Footer -->
+  <footer>
+  
+    <div style="margin-top: 15px;">&copy; 2025 ZumaBet. Tüm hakları saklıdır.</div>
+  </footer></div>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+     btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+
+    <div id="safariWarning" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:#fff; color:#000; padding:20px; border:2px solid #ec0f0f; border-radius:8px; z-index:9999; max-width:300px; text-align:center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  Safari tarayıcısı birden fazla dosya indirmeyi desteklemez.<br><br>
+  <strong style="color:#ec0f0f;">Lütfen <u>Tümünü İndir</u> butonunu kullanın.</strong><br><br>
+  <button onclick="document.getElementById('safariWarning').style.display='none'" style="padding: 6px 12px; background: #ec0f0f; color: white; border: none; border-radius: 5px; cursor: pointer;">Kapat</button>
+</div>
+    
+</body>
+</html>
+
+<style>
+
+    @media (max-width: 768px) {
+  .header-right {
+    position: static !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0 20px 0;
+    gap: 10px;
+  }
+}
+    
+.download-buttons {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-btn {
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+.header-right {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-btn {
+  padding: 8px 16px;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.header-btn:hover {
+  background-color: #2e7d32;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card.selected::after {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #43a047;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 40px;
+}
+</style>
+
+
+<script>
+// Make cards selectable
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', function() {
+    this.classList.toggle('selected');
+  });
+});
+
+//document.getElementById('download-all').addEventListener('click', function(e) {
+ // e.preventDefault();
+ // if(confirm('Tüm bannerlar indirilecek. Onaylıyor musunuz?')) {
+ //   const allLinks = document.querySelectorAll('.card .download');
+  //  allLinks.forEach(link => {
+   //   const tempLink = document.createElement('a');
+   //   tempLink.href = link.href;
+   //   tempLink.download = link.download;
+   //   document.body.appendChild(tempLink);
+   //   tempLink.click();
+  //    document.body.removeChild(tempLink);
+//    });
+//  }
+//});
+document.getElementById('download-selected').addEventListener('click', function(e) {
+  e.preventDefault();
+
+  const selectedCards = document.querySelectorAll('.card.selected');
+  if (selectedCards.length === 0) {
+    alert('Lütfen indirmek istediğiniz bannerları seçiniz');
+    return;
+  }
+
+  // 🔥 Safari'de sadece çoklu seçim yapıldıysa uyarı göster
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari && selectedCards.length > 1) {
+    document.getElementById('safariWarning').style.display = 'block';
+    return;
+  }
+
+  if (confirm(`${selectedCards.length} adet banner indirilecek. Onaylıyor musunuz?`)) {
+    selectedCards.forEach(card => {
+      const downloadLink = card.querySelector('.download');
+      const tempLink = document.createElement('a');
+      tempLink.href = downloadLink.href;
+      tempLink.download = downloadLink.download;
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+    });
+  }
+});
+
+</script>
+
+
+<style>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #43a047;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn#download-all {
+  background-color: #ec0f0f;
+}
+
+.download-btn#download-all:hover {
+  background-color: #c50d0d;
+}
+
+.download-btn:hover {
+  background-color: #2e7d32;
+}
+</style>
